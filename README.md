@@ -1,19 +1,19 @@
 # Campus Watch
 
-A privacy-first, static academic demonstration of a coordinated campus security monitoring dashboard inspired by the University of Ibadan.
+A privacy-first, static research prototype of a coordinated campus security monitoring dashboard inspired by the University of Ibadan.
 
-## What this demo includes
+## Features
 
 - An overview dashboard with fictional reports, sample trends, and aggregated zone summaries.
 - A searchable incident list with status filters.
 - A schematic map using invented quadrants—not actual campus geography.
 - Illustrative category, daily, and zone-level charts.
-- A pretend report form that changes only the current page session.
+- A sample report form that changes only the current page session.
 - An explanation of the privacy and edge-computing research concept.
 
 ## Important limitations
 
-This is a front-end demonstration, not an official University of Ibadan service or an operational security system. It does not connect to campus security, emergency services, cameras, sensors, mobile devices, or a backend. All reports and analytics are fictional. A report submitted in the demo is held in browser memory and is lost on refresh.
+This is a front-end research prototype, not an official University of Ibadan service or an operational security system. It does not connect to campus security, emergency services, cameras, sensors, mobile devices, or a backend. All reports and analytics are fictional. A report submitted in the interface is held in browser memory and is lost on refresh.
 
 ## Run locally
 

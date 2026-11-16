@@ -58,7 +58,7 @@ function renderIncidents() {
       <td><span class="row-menu" aria-hidden="true">···</span></td>
     </tr>`).join("");
   emptyState.hidden = filtered.length !== 0;
-  tableCount.textContent = `Showing ${filtered.length} ${filtered.length === 1 ? "report" : "reports"}${filtered.length ? " · fictional demo data" : ""}`;
+  tableCount.textContent = `Showing ${filtered.length} ${filtered.length === 1 ? "report" : "reports"}${filtered.length ? " · fictional sample data" : ""}`;
   document.querySelector("#count-all").textContent = String(reports.length).padStart(2, "0");
   document.querySelector("#nav-count").textContent = String(reports.length).padStart(2, "0");
   const awaiting = reports.filter((report) => report.status === "Under review").length;
@@ -99,7 +99,7 @@ function setView(name) {
   document.querySelectorAll("[data-view]").forEach((button) => {
     button.classList.toggle("active", button.dataset.view === name && button.classList.contains("nav-link"));
   });
-  const titles = { dashboard: "Overview", incidents: "Incident reports", map: "Campus map", analytics: "Analytics", about: "About this demo" };
+  const titles = { dashboard: "Overview", incidents: "Incident reports", map: "Campus map", analytics: "Analytics", about: "About Campus Watch" };
   document.querySelector("#breadcrumb-current").textContent = titles[name] || titles.dashboard;
   document.querySelector("#sidebar").classList.remove("open");
   document.querySelector("#mobile-menu").setAttribute("aria-expanded", "false");
@@ -134,7 +134,7 @@ document.querySelector("#report-form").addEventListener("submit", (event) => {
   reports.unshift({
     id,
     title: description,
-    detail: "User-submitted demo example",
+    detail: "User-submitted sample report",
     category,
     zone,
     time,

@@ -60,8 +60,8 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .breadcrumb strong { color: #514d51; font-weight: 600; }
 .crumb-separator { color: #d1cccd; }
 .topbar-right { display: flex; align-items: center; gap: 16px; }
-.demo-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 9px; border: 1px solid #f0dfb8; border-radius: 20px; background: #fffbf2; color: #9d7425; font-size: 8px; font-weight: 800; letter-spacing: .65px; white-space: nowrap; }
-.demo-pill > span { width: 6px; height: 6px; border-radius: 50%; background: #d3a64a; }
+.map-status-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 9px; border: 1px solid #f0dfb8; border-radius: 20px; background: #fffbf2; color: #9d7425; font-size: 8px; font-weight: 800; letter-spacing: .65px; white-space: nowrap; }
+.map-status-pill > span { width: 6px; height: 6px; border-radius: 50%; background: #d3a64a; }
 .topbar-date { color: #817c80; font-size: 10px; }
 .topbar-avatar { width: 29px; height: 29px; background: #f1e5e9; }
 .mobile-menu { display: none; }
@@ -82,10 +82,10 @@ h1 span { color: var(--maroon); }
 .button-primary { background: var(--maroon); color: #fff; box-shadow: 0 2px 6px #641c3223; }
 .button-primary:hover { background: var(--maroon-dark); }
 .button-quiet { border-color: #e6e1e1; background: #fff; color: #686368; }
-.demo-notice { min-height: 42px; display: flex; align-items: center; gap: 10px; margin-bottom: 17px; padding: 8px 12px; border: 1px solid #efe4c9; border-radius: 5px; background: #fffaf0; color: #766b54; }
+.prototype-notice { min-height: 42px; display: flex; align-items: center; gap: 10px; margin-bottom: 17px; padding: 8px 12px; border: 1px solid #efe4c9; border-radius: 5px; background: #fffaf0; color: #766b54; }
 .notice-symbol { flex: 0 0 17px; width: 17px; height: 17px; display: grid; place-items: center; border: 1px solid #d6aa52; border-radius: 50%; color: #a37936; font: 700 10px Georgia, serif; }
-.demo-notice p { margin: 0; font-size: 10px; line-height: 1.45; }
-.demo-notice p strong { color: #5e5137; }
+.prototype-notice p { margin: 0; font-size: 10px; line-height: 1.45; }
+.prototype-notice p strong { color: #5e5137; }
 .notice-link { flex: 0 0 auto; margin-left: auto; padding: 2px; border: 0; background: none; color: #906821; font-size: 9px; font-weight: 700; }
 .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; margin-bottom: 15px; }
 .metric-card { min-width: 0; padding: 15px 16px 13px; border: 1px solid #eee9e8; border-radius: 6px; background: var(--surface); }
@@ -347,16 +347,16 @@ td { padding: 11px 13px; border-top: 1px solid #f3f0ef; color: #706a70; font-siz
   .topbar-right { gap: 8px; }
   .topbar-date { display: none; }
   .topbar-avatar { width: 26px; height: 26px; font-size: 8px; }
-  .demo-pill { padding: 5px 7px; font-size: 7px; }
+  .map-status-pill { padding: 5px 7px; font-size: 7px; }
   .page-content { padding: 24px 15px 18px; }
   .page-heading { align-items: flex-start; }
   .page-heading h1 { font-size: 22px; }
   .page-heading > .button { align-self: flex-end; flex: 0 0 auto; padding: 0 9px; font-size: 9px; }
-  .page-heading > .demo-pill { align-self: center; }
+  .page-heading > .map-status-pill { align-self: center; }
   .page-subtitle { max-width: 420px; font-size: 10px; line-height: 1.5; }
-  .demo-notice { align-items: flex-start; padding: 9px; }
+  .prototype-notice { align-items: flex-start; padding: 9px; }
   .notice-symbol { margin-top: 1px; }
-  .demo-notice p { font-size: 9px; }
+  .prototype-notice p { font-size: 9px; }
   .notice-link { font-size: 8px; }
   .dashboard-grid, .analytics-grid { grid-template-columns: 1fr; }
   .dashboard-grid > .panel { min-height: 0; }
@@ -394,7 +394,7 @@ td { padding: 11px 13px; border-top: 1px solid #f3f0ef; color: #706a70; font-siz
   .page-heading > .button svg { width: 13px; }
   .page-heading h1 { font-size: 20px; }
   .page-heading .eyebrow { font-size: 7px; }
-  .demo-pill { letter-spacing: .2px; }
+  .map-status-pill { letter-spacing: .2px; }
   .category-content { gap: 14px; padding-right: 13px; padding-left: 13px; }
   .category-legend > span { font-size: 7px; }
   .metric-grid { gap: 8px; }
