@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#641c32">
-    <meta name="description" content="A privacy-first campus security monitoring research prototype inspired by the University of Ibadan.">
-    <title>Campus Watch | Campus Security Prototype</title>
+    <meta name="description" content="A privacy-first campus security monitoring dashboard inspired by the University of Ibadan.">
+    <title>Campus Watch | Campus Security</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
   </head>
@@ -58,7 +58,7 @@
           </div>
           <div class="profile">
             <span class="avatar">UI</span>
-            <span class="profile-copy"><strong>Campus Watch</strong><small>Research prototype</small></span>
+            <span class="profile-copy"><strong>Campus Watch</strong><small>Campus security</small></span>
             <span class="profile-dots" aria-hidden="true">···</span>
           </div>
         </div>
@@ -88,12 +88,6 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg>
                 Report an incident
               </button>
-            </div>
-
-            <div class="prototype-notice">
-              <span class="notice-symbol">i</span>
-              <p><strong>Research prototype.</strong> Activity shown is fictional sample data—not live campus monitoring or emergency reporting.</p>
-              <button type="button" class="notice-link" data-view="about">Learn more <span aria-hidden="true">↗</span></button>
             </div>
 
             <div class="metric-grid" id="metric-grid">
@@ -168,7 +162,7 @@
                 <div class="panel-footer"><span class="sample-caption">Illustrative distribution only</span><button type="button" class="text-button" data-view="analytics">View analytics →</button></div>
               </article>
             </div>
-            <footer class="page-footer"><span>Campus Watch <span aria-hidden="true">·</span> Research prototype</span><span>University of Ibadan-inspired concept <span aria-hidden="true">·</span> Not an official university system</span></footer>
+            <footer class="page-footer"><span>Campus Watch</span><span>Demo data <span aria-hidden="true">·</span> illustrative only</span></footer>
           </section>
 
           <section class="view" id="view-incidents" aria-labelledby="incidents-title" hidden>
@@ -176,7 +170,6 @@
               <div><div class="eyebrow"><span class="eyebrow-line"></span> REPORT MANAGEMENT</div><h1 id="incidents-title">Incident reports</h1><p class="page-subtitle">Review and track fictional sample reports.</p></div>
               <button class="button button-primary" type="button" data-open-report><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg>New report</button>
             </div>
-            <div class="prototype-notice"><span class="notice-symbol">i</span><p>Reports are fictional and stored only in this browser session. They are not sent to campus security.</p></div>
             <article class="panel incident-table-panel">
               <div class="incident-toolbar">
                 <div class="filter-tabs" role="group" aria-label="Filter by status">
@@ -196,12 +189,11 @@
               </div>
               <div class="table-footer"><span id="table-count">Showing 8 sample reports</span><span>Fictional sample data</span></div>
             </article>
-            <footer class="page-footer"><span>Campus Watch <span aria-hidden="true">·</span> Research prototype</span><span>No real reports are created or transmitted</span></footer>
+            <footer class="page-footer"><span>Campus Watch</span><span>No real reports are created or transmitted</span></footer>
           </section>
 
           <section class="view" id="view-map" aria-labelledby="map-title" hidden>
             <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ILLUSTRATIVE VIEW</div><h1 id="map-title">Campus activity map</h1><p class="page-subtitle">A simplified, fictional view for exploring how zone-level summaries might work.</p></div><span class="map-status-pill"><span></span> NOT A REAL MAP</span></div>
-            <div class="prototype-notice"><span class="notice-symbol">i</span><p>Zones and report positions are invented and intentionally imprecise. This is not a map of University of Ibadan facilities.</p></div>
             <div class="map-page-grid">
               <article class="panel full-map-panel">
                 <div class="panel-heading"><div><h2>Sample campus zones</h2><p>Aggregated counts; no personal or device-level location data</p></div><span class="select-static">All zones <span aria-hidden="true">⌄</span></span></div>
@@ -217,27 +209,25 @@
               </article>
               <aside class="panel zone-list-panel"><div class="panel-heading"><div><h2>Zone summary</h2><p>Sample reports by quadrant</p></div></div><div class="zone-list"><div><span class="zone-marker marker-maroon"></span><span><strong>Central quadrant</strong><small>3 reports · 1 under review</small></span><b>03</b></div><div><span class="zone-marker marker-amber"></span><span><strong>North quadrant</strong><small>2 reports · 1 in progress</small></span><b>02</b></div><div><span class="zone-marker marker-blue"></span><span><strong>South quadrant</strong><small>2 reports · 2 resolved</small></span><b>02</b></div><div><span class="zone-marker marker-green"></span><span><strong>East quadrant</strong><small>1 report · resolved</small></span><b>01</b></div></div><div class="zone-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="M12 8v4m0 4h.01"/></svg><p><strong>Privacy by design</strong><br>Only fictional, zone-level aggregates are shown. No person tracking or precise incident coordinates.</p></div></aside>
             </div>
-            <footer class="page-footer"><span>Campus Watch <span aria-hidden="true">·</span> Research prototype</span><span>Map does not represent actual campus geography</span></footer>
+            <footer class="page-footer"><span>Campus Watch</span><span>Map does not represent actual campus geography</span></footer>
           </section>
 
           <section class="view" id="view-analytics" aria-labelledby="analytics-title" hidden>
             <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SAMPLE INSIGHTS</div><h1 id="analytics-title">Trends &amp; analytics</h1><p class="page-subtitle">Example summaries to illustrate privacy-conscious campus reporting.</p></div><span class="select-static">Last 7 days <span aria-hidden="true">⌄</span></span></div>
-            <div class="prototype-notice"><span class="notice-symbol">i</span><p>Charts are illustrative, not predictions. A real system would require validated data, transparent evaluation, and human review before action.</p></div>
             <div class="analytics-metrics"><article class="metric-card"><div class="metric-top"><span>Sample reports this week</span><span class="metric-icon icon-maroon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h17"/><path d="m7 15 4-4 3 2 6-7"/></svg></span></div><div class="metric-value">85</div><div class="metric-foot"><span class="trend positive">↓ 8%</span> <span>illustrative comparison</span></div></article><article class="metric-card"><div class="metric-top"><span>Most common category</span><span class="metric-icon icon-amber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h17"/><path d="M8 15h2m2-4h2m2-5h2"/></svg></span></div><div class="metric-value metric-word">Safety concern</div><div class="metric-foot"><span>38% of sample reports</span></div></article><article class="metric-card"><div class="metric-top"><span>Zone with most reports</span><span class="metric-icon icon-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15m6-12v15"/></svg></span></div><div class="metric-value metric-word">Central</div><div class="metric-foot"><span>3 fictional reports</span></div></article></div>
             <div class="analytics-grid">
               <article class="panel analytics-trend-panel"><div class="panel-heading"><div><h2>Reports by day</h2><p>Illustrative distribution over a sample week</p></div><span class="chart-badge"><i class="legend-dot dot-chart"></i> Sample data</span></div><div class="large-chart" role="img" aria-label="Sample reports per day: Monday 8, Tuesday 12, Wednesday 9, Thursday 15, Friday 11, Saturday 18, Sunday 12"><div class="large-chart-y"><span>20</span><span>15</span><span>10</span><span>5</span><span>0</span></div><div class="large-chart-main"><div class="large-gridlines"><i></i><i></i><i></i><i></i><i></i></div><div class="large-bars"><div><span style="--bar:40%"></span><small>Mon</small></div><div><span style="--bar:60%"></span><small>Tue</small></div><div><span style="--bar:45%"></span><small>Wed</small></div><div><span style="--bar:75%"></span><small>Thu</small></div><div><span style="--bar:55%"></span><small>Fri</small></div><div><span class="bar-highlight" style="--bar:90%"></span><small>Sat</small></div><div><span style="--bar:60%"></span><small>Sun</small></div></div></div></div></article>
               <article class="panel analytics-category-panel"><div class="panel-heading"><div><h2>By category</h2><p>Share of fictional reports</p></div></div><div class="analytics-donut-wrap"><div class="donut-chart analytics-donut" role="img" aria-label="Safety concern 38 percent, infrastructure 27 percent, suspicious activity 20 percent, other 15 percent"><div><strong>85</strong><span>reports</span></div></div></div><div class="analytics-category-list"><div><span><i class="legend-dot cat-one"></i>Safety concern</span><strong>38%</strong></div><div><span><i class="legend-dot cat-two"></i>Infrastructure</span><strong>27%</strong></div><div><span><i class="legend-dot cat-three"></i>Suspicious activity</span><strong>20%</strong></div><div><span><i class="legend-dot cat-four"></i>Other</span><strong>15%</strong></div></div></article>
               <article class="panel analytics-zone-panel"><div class="panel-heading"><div><h2>Reports by zone</h2><p>Aggregated fictional counts</p></div></div><div class="zone-bars"><div><span>Central quadrant</span><div><i style="--width:100%"></i></div><b>3</b></div><div><span>North quadrant</span><div><i style="--width:67%"></i></div><b>2</b></div><div><span>South quadrant</span><div><i style="--width:67%"></i></div><b>2</b></div><div><span>East quadrant</span><div><i style="--width:34%"></i></div><b>1</b></div></div></article>
-              <article class="panel insights-panel"><div class="panel-heading"><div><h2>Responsible interpretation</h2><p>What this prototype does—and doesn't—claim</p></div><span class="insight-shield"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span></div><ul class="insight-list"><li><span>01</span><p><strong>Summaries, not surveillance</strong>Counts are grouped by broad fictional zones—no identity or device tracking.</p></li><li><span>02</span><p><strong>Patterns, not predictions</strong>Charts describe made-up historical samples; they do not forecast risk.</p></li><li><span>03</span><p><strong>People stay in the loop</strong>A real deployment needs human review, community input, and independent validation.</p></li></ul></article>
+              <article class="panel insights-panel"><div class="panel-heading"><div><h2>Responsible interpretation</h2><p>What this dashboard does—and doesn't—claim</p></div><span class="insight-shield"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span></div><ul class="insight-list"><li><span>01</span><p><strong>Summaries, not surveillance</strong>Counts are grouped by broad fictional zones—no identity or device tracking.</p></li><li><span>02</span><p><strong>Patterns, not predictions</strong>Charts describe made-up historical samples; they do not forecast risk.</p></li><li><span>03</span><p><strong>People stay in the loop</strong>A real deployment needs human review, community input, and independent validation.</p></li></ul></article>
             </div>
-            <footer class="page-footer"><span>Campus Watch <span aria-hidden="true">·</span> Research prototype</span><span>Illustrative data only <span aria-hidden="true">·</span> Not operational analytics</span></footer>
+            <footer class="page-footer"><span>Campus Watch</span><span>Demo data <span aria-hidden="true">·</span> illustrative only</span></footer>
           </section>
 
           <section class="view" id="view-about" aria-labelledby="about-title" hidden>
-            <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ABOUT THE PROTOTYPE</div><h1 id="about-title">A safer campus, <span>by design</span></h1><p class="page-subtitle">A student concept exploring privacy-conscious coordination—not an official University of Ibadan service.</p></div></div>
-            <div class="prototype-notice"><span class="notice-symbol">i</span><p>This is a research prototype. It is not connected to the University of Ibadan, campus security staff, emergency services, cameras, or mobile devices.</p></div>
+            <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ABOUT CAMPUS WATCH</div><h1 id="about-title">A safer campus, <span>by design</span></h1><p class="page-subtitle">A student concept exploring privacy-conscious coordination—not an official University of Ibadan service.</p></div></div>
             <div class="about-grid"><article class="panel about-card"><span class="about-number">01</span><h2>What you can explore</h2><p>Navigate the dashboard, browse fictional incident reports, view a schematic zone map, and inspect sample charts. You can submit a sample report to see how the interface responds.</p></article><article class="panel about-card"><span class="about-number">02</span><h2>Privacy by default</h2><p>No personal data is requested or stored. Sample reports use broad invented zones, with no identities, exact coordinates, device identifiers, or live sensor feeds.</p></article><article class="panel about-card"><span class="about-number">03</span><h2>Edge computing concept</h2><p>The research concept proposes processing sensitive signals close to where they are generated and sharing only minimal, aggregated information when appropriate. This website does not implement edge processing or ingest sensor data.</p></article><article class="panel about-card"><span class="about-number">04</span><h2>Before any real-world use</h2><p>Deployment would require university authorization, community consultation, a privacy and impact assessment, security testing, accessible reporting alternatives, and clear human-led response policies.</p></article></div>
-            <footer class="page-footer"><span>Campus Watch <span aria-hidden="true">·</span> Research prototype</span><span>Concept only <span aria-hidden="true">·</span> No operational capability</span></footer>
+            <footer class="page-footer"><span>Campus Watch</span><span>Demo data <span aria-hidden="true">·</span> illustrative only</span></footer>
           </section>
         </div>
       </main>
